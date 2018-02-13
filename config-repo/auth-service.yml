@@ -12,7 +12,7 @@ eureka:
     health-check-url-path: /uaa/mgmt/health
     status-page-url-path: /uaa/mgmt/info
     metadata-map:
-      management.context-path: /uaa
+      management.context-path: /uaa/mgmt
 
 spring:
   datasource:
