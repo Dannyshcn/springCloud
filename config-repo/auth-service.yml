@@ -5,14 +5,14 @@ server:
 management:
   security:
     enabled: false
-  context-path: /
+  context-path: /mgmt
 
 eureka:
   instance:
-    health-check-url-path: /uaa/mgmt/health
-    status-page-url-path: /uaa/mgmt/info
+    health-check-url-path: /mgmt/uaa/health
+    status-page-url-path: /mgmt/uaa/info
     metadata-map:
-      management.context-path: /uaa/mgmt/
+      management.context-path: /mgmt/uaa/
 
 spring:
   datasource:
