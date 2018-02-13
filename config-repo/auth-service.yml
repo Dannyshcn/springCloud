@@ -10,8 +10,8 @@ management:
 
 eureka:
   instance:
-    health-check-url-path: /mgmt/health
-    status-page-url-path: /mgmt/info
+    health-check-url-path: /health
+    status-page-url-path: /info
     metadata-map:
       management.context-path: /mgmt
 
