@@ -5,13 +5,15 @@ server:
 management:
   security:
     enabled: false
+  port: 5005
   context-path: /mgmt
 
 eureka:
   instance:
-    health-check-url-path: /uaa/mgmt/health
-    status-page-url-path: /uaa/mgmt/info
-
+    health-check-url-path: /mgmt/health
+    status-page-url-path: /mgmt/info
+    metadata-map:
+      management.context-path: /mgmt
 
 spring:
   datasource:
