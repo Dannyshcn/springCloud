@@ -6,7 +6,7 @@ name: zhangxd
 
 eureka:
   instance:
-    instance-id: ${spring.cloud.client.ipAddress}:${random.int}
+    instance-id: ${spring.cloud.client.ipAddress}:${random.int[10000,19999]}
     metadata-map:
       user.name: ${security.user.name}
       user.password: ${security.user.password}
